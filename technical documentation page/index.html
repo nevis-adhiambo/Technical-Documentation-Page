@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Technical Documentation Page</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<nav id="navbar">
+		<header>OBJECT-ORIENTED PROGRAMMING AND C++</header>
+		<ul>
+			<li><a href="#task_of_programming" class="nav-link">TASK OF PROGRAMMING</a></li>
+			<li><a href="#programming_universals" class="nav-link">PROGRAMMING UNIVERSALS</a></li>
+			<li><a href="#procedural_programming" class="nav-link">PROCEDURAL PROGRAMMING</a></li>
+			<li><a href="#object_oriented-programming" class="nav-link">OBJECT-ORIENTED PROGRAMMING</a></li>
+			<li><a href="#working_with_variables" class="nav-link">WORKING WITH VARIABLES AND THE const QUALIFIER</a></li>			
+		</ul>
+	</nav>
+</head>
+<body>
+	<main id="main-doc">
+		<section class="main-section" id="task_of_programming">
+			<header>THE TASK OF PROGRAMMING</header>
+			<p>Programming a computer involves writing instructions that enable a computer to carry out a singletask or a group of tasks. Writing these sets of instructions, which are known as programs or software,requires using a computer programming language and resolving any errors in the instructionsso that the programs work correctly. Programs are also frequently called application programs,or simply applications, because you apply them to a task such as preparing payroll checks,creating inventory reports, or—as in the case of game programs—even entertaining someone.As with any language, learning a computer programming language requires learning both vocabularyand syntax. People speak a variety of languages, such as English and Japanese; similarly, use many different programming languages, including Java, Visual Basic, C#, and C++.The rules of any language make up its syntax. Writing in a programming language requires correct use of that language’s syntax. In English, using incorrect syntax—that is, committing a syntax error—might make communication more difficult but usually does not prevent it altogether. If you ask, “Name yours what is?” most people can still figure out what you mean. If you are vague or spell a word wrong when writing, most people will nevertheless understand your message. Computers are not nearly as flexible as most people. As a result, using correct syntax in a computer program is not just important—it’s essential.</p>
+			<p>Two of the following statements are true, and one is false. Identify the false statement and explain why it is false</p>
+			<ol>
+				<li>The grammatical rules of any language make up its logic; violating these rules is a logical error.</li>
+				<li>A translator program (called either a compiler or an interpreter) checks your program for syntax errors and covertscode to machine language.</li>
+				<li>A logical error occurs when you use a statement that, although syntactically correct, doesn’t do what you intended</li>
+			</ol>
+			<p></p>
+			<code></code>
+		</section>
+
+		<section class="main-section" id="programming_universals">
+			<header>PROGRAMMING UNIVERSALS</header>
+			<p>
+				All modern programming languages share common characteristics. For example, all programming languages provide methods for directing output—the information produced by a program—to a desired object, such as a monitor screen, printer, or file. Similarly, all programming languages provide methods for sending input—the data provided by an outside source, such as a keyboard, scanner, or file—into computer memory so that a program can manipulate it. In addition, all programming languages provide a way to name locations in computer memory. These locations are commonly called variables. For example, if a person asks, “What is yourAge?” yourAge is considered a variable for two reasons: yourAge has different (varied) values for different people, and any person can have a change in the value of yourAge. When writing a computer program, yourAge becomes the name of a position or location in computer memory; the value at that location or the state of that location might be 18 or 80, or it might be unknown.
+			</p>
+			<p>Two of the following statements are true, and one is false. Identify the false statement and explain why it is false</p>
+			<ol>
+				<li>You cannot write procedural programs in most modern programming languages, including C++.</li>
+				<li>The basic control structures are sequence, selection, and loop.</li>
+				<li>Modern programming languages allow programmers to break their programs into modules—groups of statements that can be executed as a unit.</li>
+			</ol>
+			<p>Early Procedural programs<br>declare variables quantityOrdered, customerName, customerAddress, and balanceDue read in quantityOrdered, customerName, and customerAddress from disk</p>
+			<code>
+				print "From:"<br>
+				print "ABC Company"<br>
+				print "Stevens Point, WI"<br>
+				print "Send To:"<br>
+				print customerName<br>
+				print customerAddress<br>
+				multiply quantityOrdered by 7.99 giving balanceDue<br>
+				print balanceDue<br>
+			</code>
+		</section>
+
+		<section class="main-section" id="procedural_programming">
+			<header>PROCEDURAL PROGRAMMING</header>
+			<p>For most of the history of computer programming, which now covers roughly 60 years, most programs were written procedurally. Procedural programs consist of a series of steps or procedures that take place one after the other. The programmer determines the exact conditions under which a procedure takes place, how often it takes place, and when the program stops. Programmers write procedural programs in many programming languages, such as COBOL, BASIC, FORTRAN, and RPG. You can also write procedural programs in C++. Although each language has a different syntax, they all share many elements. Over the years, as programmers have sought better ways to accommodate the way people work best on computers, procedural programming techniques have evolved into objectoriented techniques. Some older languages do not support object-oriented techniques, but several newer languages do, including Visual Basic, Java, C#, and C++.</p>
+			<p>The procedural billing program containing several module calls</p>
+			<code>
+				declare variables quantityOrdered, customerName, customerAddress, and balanceDue<br>
+				Repeat until there are no more input records on the disk<br>
+				read in quantityOrdered, customerName, and customerAddress from disk<br>
+				printReturnAddress()<br>
+				printSendToAddress()<br>
+				computeBalance()<br>
+				print balanceDue<br>
+			</code>
+			<p>TWO TRUTHS AND A LIE: PROCEDURAL PROGRAMMING</p>
+			<ol>
+				<li>You cannot write procedural programs in most modern programming languages, including C++.</li>
+				<li>The basic control structures are sequence, selection, and loop.</li>
+				<li>Modern programming languages allow programmers to break their programs into modules—groups of statements that can be executed as a unit.</li>
+			</ol>
+		</section>
+
+		<section class="main-section" id="object_oriented-programming">
+			<header>OBJECT-ORIENTED PROGRAMMING</header>
+			<p>Object-oriented programs use all the features of procedural programs you just read about: they contain variables that are operated on by instructions written in sequence, selection, and loop statements. However, object-oriented programming requires a different way of thinking and adds several new concepts to programming:</p>
+			<ol>
+				<li>You analyze the objects with which you are working—both the attributes of those objects and the tasks that need to be performed with and on those objects.</li>
+				<li>You pass messages to objects, requesting the objects to take action</li>
+				<li>The same message works differently (and appropriately) when applied to the various objects.</li>
+				<li>A method can work appropriately with different types of data it receives, without the need for separate method names.</li>
+				<li>Objects can assume or inherit traits of previously created objects, thereby reducing the time it takes to create new objects</li>
+				<li>Information hiding is more complete than in procedural programs.</li>
+			</ol>
+			<p>The code following this paragraph shows the beginning of a typical C++ program that will use variables of several types</p>
+			<code>
+				int main()<br>
+				{<br>
+				int myAge;<br>
+				int yourAge;<br>
+				char myMiddleInitial;<br>
+				double myMoney, yourMoney;<br>
+				// More statements usually would belong here<br>
+				return 0;<br>
+				}
+			</code>
+		</section>
+
+		<section class="main-section" id="working_with_variables">
+			<header>WORKING WITH VARIABLES AND THE const QUALIFIER</header>
+			<p>In C++, you must provide a name, also called an identifier, to each variable before you can use it. The ability to use identifiers is a key feature of all modern programming languages; without them, you would need to memorize a value’s computer memory address. Just as it is easier for you to remember that the President of the United States lives in the White House than it is to remember its street address, it is also easier to remember a descriptive identifier than it is to remember a memory address. Identifiers for C++ variables can include letters, numbers, and underscores, but must begin with a letter or underscore. No spaces or other special characters are allowed within a C++ variable name. Age, lastName, tax_2010, ready2go, salary, Salary, and SALARY are all valid identifiers. Note that salary, Salary, and SALARY could all be used within the same C++ function without conflict because C++ is case-sensitive. (However, using multiple identifiers whose only difference is the case of some of the letters would be confusing and is not recommended.) C++ programmers typically use all lowercase letters for variable names, or else capitalize only the first letter of each new word (after the first word) in a variable name, as in lastYearGross.</p>
+			<code>
+				using namespace std;
+				int main()
+				{
+				cout << "Hi there";
+				return 0;
+				}
+				// Program that displays "Hi there" using a Standard C++ compiler
+				#include<iostream.h>
+				int main()
+				{
+				cout << "Hi there";
+				return 0;
+				}
+			</code>
+			<p>TWO TRUTHS AND A LIE: PRODUCING C++ OUTPUT</p>
+			<ol>
+				<li>C++ provides several objects for producing output; the simplest object is called cout, and it is used with an insertion operator.</li>
+				<li>To indicate a new line of output in a C++ program you can use the newline character ('\n') or the endl manipulator.</li>
+				<li>You can use the newline character or endl in a statement, but not both.</li>
+			</ol>
+		</section>
+		
+	</main>
+
+</body>
+</html>
